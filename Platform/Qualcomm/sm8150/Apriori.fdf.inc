@@ -166,17 +166,17 @@ APRIORI DXE {
   INF SecurityPkg/VariableAuthenticated/SecureBootDefaultKeysDxe/SecureBootDefaultKeysDxe.inf
 !endif
 
-!if $(USE_SIMPLEFBDXE) == TRUE
-  INF SurfaceDuoFamilyPkg/Driver/SimpleFbDxe/SimpleFbDxe.inf
-!endif
 
-!if $(USE_DISPLAYDXE) == TRUE
+
+
   FILE DRIVER = 4138022f-06c7-4f79-9c94-7e33b511a4e7 {
-    SECTION DXE_DEPEX = Platform/EFI_Binaries/Drivers/sm8150/DisplayDxe/DisplayDxe.depex
-    SECTION PE32 = Platform/EFI_Binaries/Drivers/sm8150/Patched_Binaries/DisplayDxe.efi
+    SECTION DXE_DEPEX = Platform/EFI_Binaries/Drivers/sm8150/Patched_Binaries/PatchedBinaries/DisplayDxe.depex
+    SECTION PE32 = Platform/EFI_Binaries/Drivers/sm8150/Patched_Binaries/PatchedBinaries/DisplayDxe.inf
     SECTION UI = "DisplayDxe"
   }
-!endif
+
+
+
 
   FILE DRIVER = 1d317734-4083-47c6-83ea-e3a42f2a6bff {
     SECTION DXE_DEPEX = Platform/EFI_Binaries/Drivers/sm8150/PILDxe/PILDxe.depex

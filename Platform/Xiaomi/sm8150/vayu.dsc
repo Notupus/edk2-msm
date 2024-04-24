@@ -1,4 +1,4 @@
-[Defines]
+s[Defines]
   VENDOR_NAME                    = Xiaomi
   PLATFORM_NAME                  = vayu
   PLATFORM_GUID                  = 28f1a3bf-193a-47e3-a7b9-5a435eaab2ee

@@ -257,3 +257,18 @@
     SECTION PE32 = Platform/EFI_Binaries/Drivers/sm8150/GpiDxe/GpiDxe.efi
     SECTION UI = "GpiDxe"
   }
+    FILE DRIVER = 453433E1-A5D4-43A1-8305-3DAC9A16BC3C {
+    SECTION DXE_DEPEX = Platform/EFI_Binaries/Drivers/sm8150/Patched_Binaries/PatchedBinaries/DisplayDxe.depex
+    SECTION PE32 = Platform/EFI_Binaries/Drivers/sm8150/Patched_Binaries/PatchedBinaries/DisplayDxe.inf
+    SECTION UI = "DisplayDxe"
+  }
+  FILE FREEFORM = 17EF92D8-311D-4FE7-BB37-80B893D3730D {
+    SECTION UI = "Panel_J20S_36_02_0a_lcd_dsc_vid.xml"
+    SECTION RAW = Platform/Xiaomi/sm8150/RAW/Panel_J20S_36_02_0a_lcd_dsc_vid.xml
+}
+
+
+FILE FREEFORM = 5F12771D-549F-474C-964F-79C525D3ECF5 {
+    SECTION UI = "Panel_J20S_42_02_0b_lcd_dsc_vid.xml"
+    SECTION RAW = Platform/Xiaomi/sm8150/RAW/Panel_J20S_42_02_0b_lcd_dsc_vid.xml
+}
